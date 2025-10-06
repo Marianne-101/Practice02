@@ -15,4 +15,4 @@ document.querySelector('.google-signup-btn').addEventListener('click', function(
     // Initiate Google OAuth Flow
     console.log('Initiating Google sign-up/login.');
     // This typically involves redirecting the user to Google's sign-in page.
-});
+});x
