@@ -4,34 +4,21 @@ body {
     background-color: #0d1117; /* Dark background color */
     color: #c9d1d9; /* Light text color */
     margin: 0;
+    
+    /* Centering the entire content block on the screen */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
     min-height: 100vh;
 }
 
 .auth-container {
     width: 100%;
-    max-width: 1440px; /* Matching the resolution hint in the image */
+    max-width: 600px; /* Limits the overall content width */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centers main content, form, and footer */
     padding: 20px;
-}
-
-/* Header Styling */
-.app-header {
-    width: 100%;
-    max-width: 600px; /* Constraining the header width */
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    margin-bottom: 50px;
-}
-
-.auth-label, .code-icon {
-    font-size: 1.1em;
-    font-weight: bold;
 }
 
 /* Login Box / Main Content */
@@ -40,6 +27,7 @@ body {
     width: 100%;
     max-width: 400px; /* A good width for a standard login form */
     padding: 20px;
+    margin-top: 50px; /* Adds space at the top since the header was removed */
 }
 
 h1 {
@@ -100,7 +88,7 @@ button {
     width: 18px;
     height: 18px;
     margin-right: 8px;
-    /* In a real scenario, you'd ensure the Google logo image is properly styled */
+    /* You must ensure the google-icon.png file exists */
 }
 
 /* Separator Style */
@@ -138,5 +126,4 @@ button {
 .logo-footer img {
     height: 40px; /* Adjust size as needed */
     width: auto;
-    /* You may need additional styling to make logos look good against the dark background */
 }
